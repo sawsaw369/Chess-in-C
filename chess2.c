@@ -467,8 +467,8 @@ int validate_queen_move (struct coords start, struct coords end)
 
 int validate_king_move (struct coords start, struct coords end)
 {
-    if ((start.piece == 'Q' && end.piece > 'A' && end.piece < 'Z') 
-    || (start.piece == 'q' && end.piece > 'a' && end.piece < 'z'))
+    if ((start.piece == 'K' && end.piece > 'A' && end.piece < 'Z') 
+    || (start.piece == 'k' && end.piece > 'a' && end.piece < 'z'))
     {
         return 0;
     }
